@@ -1,0 +1,8 @@
+<mat-card>
+  <input
+    type="text"
+    [(ngModel)]="inputSearch"
+    (input)="search.emit(inputSearch)"
+    placeholder="Rechercher"
+  />
+</mat-card>
