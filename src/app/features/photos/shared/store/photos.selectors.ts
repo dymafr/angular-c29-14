@@ -9,3 +9,7 @@ export const selectPhotoList = createSelector(
   (photoState: PhotosState) => photoState.photos
 );
 
+export const selectLoading = createSelector(
+  selectPhotosFeature,
+  (photoState: PhotosState) => photoState.loading
+);
