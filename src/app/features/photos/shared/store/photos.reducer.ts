@@ -16,6 +16,13 @@ export const photosReducerKey = '[ reducer ] photos';
 
 export const photosReducer = createReducer(
   PHOTOS_INITIAL_STATE,
+  on(PhotosActions.loadPhotosAction, (state: PhotosState): PhotosState => {
+    return {
+      ...state,
+      loading: true,
+      photos: [],
+    };
+  }),
   on(
     PhotosActions.searchPhotosSuccessAction,
     (state: PhotosState, { photos }: { photos: Photo[] }): PhotosState => {
