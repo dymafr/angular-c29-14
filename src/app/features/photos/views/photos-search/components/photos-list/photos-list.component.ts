@@ -7,7 +7,7 @@ import {
   trigger,
 } from '@angular/animations';
 import { Component, Input } from '@angular/core';
-import { Photo } from 'src/app/features/photos/shared/interfaces/photo.interface';
+import { Photo } from '../../../../shared/interfaces/photo.interface';
 
 @Component({
   selector: 'app-photos-list',
